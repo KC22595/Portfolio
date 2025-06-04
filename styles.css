@@ -133,8 +133,12 @@ body {
     margin: 0 auto;
   }
   .nav-links {
-    flex-direction: column;
-    gap: 1rem;
+    display: flex;
+    flex-direction: row; /* ✅ Horizontal layout */
+    gap: 1.5rem;
+    justify-content: center; /* Optional: center links */
+    align-items: center;
+    flex-wrap: wrap; /* Optional: handles very small screens */
   }
 }
 
